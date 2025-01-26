@@ -2,7 +2,7 @@
 Implementation of a small shell program in C
 
 # Project Description 
-The project implements a subset of features of well-known shells, such as bash. The project was built for CS 344 - Operating Systems I. Among other things, the project implements the following features: 
+The project implements a subset of features of well-known shells, such as bash. The project was originally built for CS 344 - Operating Systems I. Now, I just maintain this for fun, adding features occasionally that I think would be fun to use. Among other things, the project implements the following features: 
 
 - Provides a prompt for running commands 
 - Handles blank lines and comments (i.e. lines beginning with the # character)
@@ -27,6 +27,6 @@ To run the file correctly use the command:
 
 `gcc -std=gnu99 -g -Wall -o smallsh main.c`
 
-A Makefile is also include, so you can also use this command to run the program:
+A Makefile is also included, so you can also use this command to run the program:
 
 `make`
