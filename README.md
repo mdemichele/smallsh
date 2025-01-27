@@ -23,10 +23,30 @@ This project demonstrates understanding of a number of concepts related to Unix 
 - understanding of the difference between foreground and background processes  
 
 # Running the Program 
-To run the file correctly use the command:
+To compile the file correctly use the command:
 
 `gcc -std=gnu99 -g -Wall -o smallsh main.c`
 
-A Makefile is also included, so you can also use this command to run the program:
+A Makefile is also included, so you can also use this command to compile the program:
 
 `make`
+
+Then, once you have the executable, call the command:
+
+`./smallsh`
+
+# User Guide
+
+The display prompt shown to the user is a colon ":" 
+
+The program accepts input directly after the ":"
+
+The program will skip a line if it begins with a blank space or the "#" character.
+
+There are three commands accepted by the program:
+1. exit
+2. cd
+3. status
+
+To exit the program, type "exit" and hit enter.
+
