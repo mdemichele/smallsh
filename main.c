@@ -1,9 +1,10 @@
 /*******************************************************************
- * Title: smallsh												   *
- * Author: Matthew DeMichele									   *
+ * Title: smallsh						   *
+ * Author: Matthew DeMichele					   *
  * Description: smallsh is an implementation of a basic shell      *
- * 			    written in C.									   *
- * Date: 1 November 2021                                           *
+ * written in C.		 			 	   *
+ * Created: 1 November 2021	                                   *
+ * Last Updated: 26 January 2025				   *
  *******************************************************************/
 
 
@@ -348,7 +349,7 @@ struct command convert_input(char *input) {
 	int setBackground = 0;
 
 	// Loop through input and parse the input string 
-	for (iterator = 1, readString = input;  ; iterator++, readString = NULL) {
+	for (iterator = 1, readString = input; iterator < 100; iterator++, readString = NULL) {
 		// Get token from readString, using space as the delimiter
 		token = strtok_r(readString, " \n\t\r\a", &saveptr);
 
