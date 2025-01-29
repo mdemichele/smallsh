@@ -37,16 +37,23 @@ Then, once you have the executable, call the command:
 
 # User Guide
 
-The display prompt shown to the user is a colon ":" 
+The display prompt shown to the user is a colon `: `. The program accepts input directly afterwards.
 
-The program accepts input directly after the ":"
-
-The program will skip a line if it begins with a blank space or the "#" character.
+The program will skip a line if it begins with a blank space or the `#` character.
 
 There are three commands accepted by the program:
-1. exit
-2. cd
-3. status
+1. `exit`
+2. `cd`
+3. `status`
 
-To exit the program, type "exit" and hit enter.
+# Exit 
+To exit the program, type `exit` and hit enter.
+
+# CD
+
+To change the directory, type `cd <directory_path>` and hit enter.
+
+# Status
+
+To see the status of a command, type `status` and hit enter.
 
