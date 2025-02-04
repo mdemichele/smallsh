@@ -61,7 +61,6 @@ void prompt_loop();
 * Main Function 
 *******************************************************************/
 int main(int argc, char* argv[]) {
-
 	// This is the main loop that runs the shell
 	prompt_loop();
 
@@ -73,7 +72,6 @@ int main(int argc, char* argv[]) {
 * Prompt Loop: Gets input from user 
 *******************************************************************/
 void prompt_loop() {
-
 	// Initialize runningProcesses structure to keep track of currently running background processes 
 	struct processes *runningProcesses = malloc(sizeof(struct processes));
 
@@ -253,7 +251,6 @@ int check_for_skips(char *input) {
 *
 ********************************************************************************/
 void change_directories(struct command enteredCommand) {
-
 	// If no arguments specified, change to home directory 
 	if (enteredCommand.arguments[1] == NULL) {
 		chdir(getenv("HOME"));
@@ -274,7 +271,6 @@ void change_directories(struct command enteredCommand) {
 * Display Status: Executes the status command
 *******************************************************************************/
 void display_status(int terminationStatus) {
-
 	// Initialize buffer for status output 
 	int messageLength = 0;
 	char statusMessage[100];
@@ -470,7 +466,6 @@ struct command convert_input(char *input) {
 * Execute Command: Executes any command not built-in to the shell 
 ***********************************************************************************/
 int execute_command(struct command enteredCommand, struct sigaction foreground_child_SIGINT, struct sigaction child_SIGTSTP, struct processes* runningProcesses) {
-	
 	/*********** Initialize necessary variables ********************/
 	pid_t childPid = -5;	// Used to keep track of current childPid
 	int input = 0;			// Used for redirecting input 
